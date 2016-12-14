@@ -2,7 +2,7 @@
 
 Author: Nathan Wailes
 
-Python version: 2.7.3
+Targeted Python version: 3.5.2
 
 I have made a YouTube video giving the same explanation I write below:
 http://bit.ly/13O2tkE

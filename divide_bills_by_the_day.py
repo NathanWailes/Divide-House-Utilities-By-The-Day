@@ -99,7 +99,7 @@ def main():
     #initializing this; I'll use it to keep track of all the person-days
     total_person_days = 0
 
-    print "\n" + bill_name + " - $" + str(bill_amount)
+    print("\n" + bill_name + " - $" + str(bill_amount))
 
     #this for-loop is to calculate the total person-days
     for p in range(len(people_data)):
@@ -114,9 +114,9 @@ def main():
 
     bill_amount_per_person_day = bill_amount / total_person_days
     
-    print "Total person-days: " + str(total_person_days) + "\n" + \
+    print("Total person-days: " + str(total_person_days) + "\n" + \
           "Bill amount per person-day: $" + \
-          str(round(bill_amount_per_person_day, 4))
+          str(round(bill_amount_per_person_day, 4)))
 
     #this for-loop is to calculate what each person owes for that bill
     for p in range(len(people_data)):
@@ -133,20 +133,20 @@ def main():
         #this lets me keep track of what everyone owes for ALL bills        
         people_data[p][ppl_total_amount_owed_pos] += p_amount_owed
         
-        print p_name + " (" + str(p_person_days) + " days, $" + \
-              str(round(p_amount_owed, 2)) + ")"
+        print(p_name + " (" + str(p_person_days) + " days, $" + \
+              str(round(p_amount_owed, 2)) + ")")
 
   total_bills = 0
   for b in range(len(bill_data)):
     total_bills += bill_data[b][bill_amount_pos]
     
-  print "\nTotal bills/expenses: $" + str(round(total_bills, 2)) + "\n" + \
-        "Total amounts owed by each person for these bills:"
+  print("\nTotal bills/expenses: $" + str(round(total_bills, 2)) + "\n" + \
+        "Total amounts owed by each person for these bills:")
   for p in range(len(people_data)):
     p_name = people_data[p][ppl_name_pos]
     p_total_amount_owed = people_data[p][ppl_total_amount_owed_pos]
 
-    print p_name + ": $" + str(round(p_total_amount_owed, 2))
+    print(p_name + ": $" + str(round(p_total_amount_owed, 2)))
 
 
 
