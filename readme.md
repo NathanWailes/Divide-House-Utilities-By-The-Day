@@ -4,7 +4,7 @@ Author: Nathan Wailes
 
 Targeted Python version: 3.5.2
 
-I have made a YouTube video giving the same explanation I write below:
+I have made a YouTube video giving the same explanation I've written out below:
 http://bit.ly/13O2tkE
 
 #### What this program does
